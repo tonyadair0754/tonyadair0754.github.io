@@ -3,17 +3,18 @@ export default function PortfolioHomepage() {
     {
       title: "RecipeLens",
       description:
-        "AI-assisted recipe extraction app that converts recipe images into structured multilingual recipe data using OCR and Gemini AI.",
+        "AI-powered app that extracts structured recipe data from images using OCR and Gemini AI.",
       tech: ["React", "FastAPI", "PostgreSQL", "OCR", "Gemini API"],
-      github: "https://github.com/tonyadair0754/RecipeLens",
-      demo: "#",
+      github: "https://github.com/tonyadair0754/recipe-app",
+      demo: "https://recipe-app-tan-six.vercel.app",
     },
     {
-      title: "Future Project",
+      title: "Datalog Interpreter",
       description:
-        "Add your next project here. Include what problem it solves and what technologies you used.",
-      tech: ["React", "Python"],
-      github: "#",
+        "Interpreter for Datalog programs built for BYU CS236, supporting query evaluation and database rule processing.",
+      tech: ["C++", "Parsing", "Databases", "Logic Programming"],
+      github:
+        "https://github.com/tonyadair0754/BYU-CS236_Datalog-Interpreter",
       demo: "#",
     },
   ];
@@ -47,7 +48,7 @@ export default function PortfolioHomepage() {
       {/* HERO */}
       <section className="mx-auto flex max-w-6xl flex-col justify-center px-6 py-28">
         <p className="mb-4 text-sm uppercase tracking-[0.3em] text-blue-400">
-          Computer Science Student & Full-Stack Developer
+          Computer Science Student & Aspiring Full-Stack Developer
         </p>
 
         <h1 className="max-w-4xl text-5xl font-bold leading-tight md:text-7xl">
@@ -55,7 +56,7 @@ export default function PortfolioHomepage() {
         </h1>
 
         <p className="mt-8 max-w-2xl text-lg leading-8 text-gray-400">
-          I’m a CS student focused on full-stack engineering, backend
+          I’m a CS student at BYU focused on learning full-stack engineering, backend
           systems, APIs, OCR pipelines, and AI-assisted applications.
           Recently, I’ve been building tools that combine modern web
           development with real-world problem solving.
@@ -71,13 +72,17 @@ export default function PortfolioHomepage() {
 
           <a
             href="https://github.com/tonyadair0754"
+            target="_blank"
+            rel="noopener noreferrer"
             className="rounded-2xl border border-gray-700 px-6 py-3 font-medium transition hover:border-blue-400 hover:text-blue-400"
           >
             GitHub
           </a>
 
           <a
-            href="#"
+            href="/resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
             className="rounded-2xl border border-gray-700 px-6 py-3 font-medium transition hover:border-blue-400 hover:text-blue-400"
           >
             Resume
@@ -123,17 +128,23 @@ export default function PortfolioHomepage() {
               <div className="mt-8 flex gap-4">
                 <a
                   href={project.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="rounded-xl bg-gray-800 px-4 py-2 transition hover:bg-gray-700"
                 >
                   GitHub
                 </a>
 
-                <a
-                  href={project.demo}
-                  className="rounded-xl border border-gray-700 px-4 py-2 transition hover:border-blue-400 hover:text-blue-400"
-                >
-                  Live Demo
-                </a>
+                {project.demo && project.demo !== "#" && (
+                  <a
+                    href={project.demo}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="rounded-xl border border-gray-700 px-4 py-2 transition hover:border-blue-400 hover:text-blue-400"
+                  >
+                    Live Demo
+                  </a>
+                )}
               </div>
             </div>
           ))}
@@ -226,7 +237,7 @@ export default function PortfolioHomepage() {
 
           <div className="mt-10 flex flex-wrap justify-center gap-4">
             <a
-              href="mailto:your-email@example.com"
+              href="mailto:tonyadair0754@gmail.com"
               className="rounded-2xl bg-blue-500 px-6 py-3 font-medium text-white transition hover:scale-105"
             >
               Email Me
@@ -235,15 +246,28 @@ export default function PortfolioHomepage() {
             <a
               href="https://github.com/tonyadair0754"
               className="rounded-2xl border border-gray-700 px-6 py-3 font-medium transition hover:border-blue-400 hover:text-blue-400"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               GitHub
             </a>
 
             <a
-              href="#"
+              href="https://www.linkedin.com/in/tony-adair-542430389"
               className="rounded-2xl border border-gray-700 px-6 py-3 font-medium transition hover:border-blue-400 hover:text-blue-400"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               LinkedIn
+            </a>
+
+            <a
+              href="/resume.pdf"
+              className="rounded-2xl border border-gray-700 px-6 py-3 font-medium transition hover:border-blue-400 hover:text-blue-400"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Resume
             </a>
           </div>
         </div>
