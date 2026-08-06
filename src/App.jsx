@@ -1,6 +1,15 @@
 export default function PortfolioHomepage() {
   const projects = [
     {
+      title: "Cadence",
+      description:
+        "Progressive Web App (PWA) with Firebase Cloud Functions and Firestore integration for real-time data and messaging.",
+      tech: ["JavaScript", "HTML/CSS", "Firebase", "Firestore", "Cloud Functions", "PWA"],
+      github:
+        "https://github.com/tonyadair0754/cadence-pwa",
+      demo: "https://cadence-fad9c.web.app/",
+    },
+    {
       title: "RecipeLens",
       description:
         "AI-powered app that extracts structured recipe data from images using OCR and Gemini AI.",
@@ -52,14 +61,12 @@ export default function PortfolioHomepage() {
         </p>
 
         <h1 className="max-w-4xl text-5xl font-bold leading-tight md:text-7xl">
-          Building practical software with AI-assisted workflows.
+          Building better systems through thoughtful engineering.
         </h1>
 
         <p className="mt-8 max-w-2xl text-lg leading-8 text-gray-400">
-          I’m a CS student at BYU focused on learning full-stack engineering, backend
-          systems, APIs, OCR pipelines, and AI-assisted applications.
-          Recently, I’ve been building tools that combine modern web
-          development with real-world problem solving.
+          I’m a CS student at BYU with minors in Korean/Mathematics, focused on learning full-stack engineering, backend
+          systems, APIs, machine learning, and AI-assisted applications.
         </p>
 
         <div className="mt-10 flex flex-wrap gap-4">
@@ -95,8 +102,7 @@ export default function PortfolioHomepage() {
         <div className="mb-12">
           <h2 className="text-4xl font-bold">Featured Projects</h2>
           <p className="mt-4 text-gray-400">
-            Projects focused on full-stack development, APIs, AI-assisted
-            workflows, and practical software engineering.
+
           </p>
         </div>
 
@@ -171,6 +177,7 @@ export default function PortfolioHomepage() {
             <h3 className="mb-4 text-xl font-semibold">Frontend</h3>
             <ul className="space-y-2 text-gray-400">
               <li>React</li>
+              <li>Progressive Web Apps (PWA)</li>
               <li>Tailwind CSS</li>
               <li>HTML/CSS</li>
             </ul>
@@ -180,6 +187,7 @@ export default function PortfolioHomepage() {
             <h3 className="mb-4 text-xl font-semibold">Backend</h3>
             <ul className="space-y-2 text-gray-400">
               <li>FastAPI</li>
+              <li>Firebase / Cloud Functions</li>
               <li>REST APIs</li>
               <li>Authentication</li>
             </ul>
@@ -189,7 +197,7 @@ export default function PortfolioHomepage() {
             <h3 className="mb-4 text-xl font-semibold">Tools</h3>
             <ul className="space-y-2 text-gray-400">
               <li>Git</li>
-              <li>PostgreSQL</li>
+              <li>Firestore / PostgreSQL</li>
               <li>Docker</li>
             </ul>
           </div>
@@ -203,10 +211,13 @@ export default function PortfolioHomepage() {
             <h2 className="text-4xl font-bold">About Me</h2>
 
             <p className="mt-6 leading-8 text-gray-400">
-              I’m a computer science student interested in backend systems,
-              AI-assisted applications, OCR pipelines, and scalable web
-              architecture. I enjoy building projects that combine practical
-              engineering with thoughtful user experience.
+              Hey there! My name is Tony, and I'm a Junior at Brigham Young University pursuing a Bachelor’s degree in Computer Science, along with minors 
+              in both Korean and Mathematics. I have experience building full-stack applications and systems-level tools that combine backend engineering, 
+              data processing, and applied AI. 
+              <br></br><br></br>
+              I'm especially interested in backend engineering and data systems, with long-term interests in natural language processing and computational 
+              linguistics. In addition to my studies, I enjoy playing musical instruments, reading/writing, cooking/baking, and learning languages! 
+              More than anything, I'm fascinated by the ways people communicate and how language, technology, and culture intersect.
             </p>
           </div>
 
